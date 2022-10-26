@@ -1,0 +1,6 @@
+#+title: Readme
+#+author: Michael B. Streed (Mikey)
+
+* Purpose
+I had to start using Git for my 310 class and I just thought that making a repo for each of my classes would be an interesting and practical way for me to get more familiar with Git.
+This will probably also be a good way for me to potentially collaborate with my fellow cohorts as well.
