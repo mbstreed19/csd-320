@@ -12,6 +12,12 @@
  */
 public class Array {
     public static void main(String[] args) {
-
+        int [] myArray = new int [19];
+        System.out.print(myArray);
+        for (int i = 0; i < myArray.length; i++){
+            myArray[i] = (int) Math.random() * 100;
+            System.out.print(myArray);
+        }
+        System.out.print(myArray);
     }
 }
