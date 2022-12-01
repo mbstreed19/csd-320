@@ -12,12 +12,38 @@
  */
 public class Array {
     public static void main(String[] args) {
-        int [] myArray = new int [19];
-        System.out.print(myArray);
-        for (int i = 0; i < myArray.length; i++){
-            myArray[i] = (int) Math.random() * 100;
-            System.out.print(myArray);
+        // gotta make my variables
+        int[] myArray = new int[20];
+        int high = 0;
+        int low = 101;
+        int ave = 0;
+        int sum = 0;
+        // System.out.print(myArray); // this is for testing
+        System.out.println("The following random numbers will be added to the array");
+        for (int i = 0; i < myArray.length; i++) {// this loop will iterate through our array
+            myArray[i] = (int) (1 + Math.random() * 100);// puts random number in array
+            System.out.println(myArray[i]);// just prints the value of the variable we are adding
+            // System.out.println("there are " + (i + 1) + " numbers in array");
+            if (high < myArray[i]) {// finds the highest number
+                high = myArray[i];
+            }
+            if (low > myArray[i]) {// finds the lowest number
+                low = myArray[i];
+            }
+            sum += myArray[i];// This is how I found the sum
         }
-        System.out.print(myArray);
+        ave = (sum / myArray.length);// This is where I calc the ave
+
+        System.out.println("");
+        System.out.println("Now to play with our numbers a little bit...");
+        System.out.println("-----------------");
+        System.out.println("The highest number is " + high);
+        System.out.println("-----------------");
+        System.out.println("The lowest number is " + low);
+        System.out.println("-----------------");
+        System.out.println("The average of the numbers is " + ave);
+        System.out.println("-----------------");
+        System.out.println("The sum of the numbers in the array is " + sum);
+
     }
 }
